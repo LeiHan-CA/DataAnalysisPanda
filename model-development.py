@@ -166,12 +166,14 @@ plt.plot(new_input, yhat)
 plt.show()
 
 # Simple Linear Regression Model (SLR) vs Multiple Linear Regression Model (MLR)
-# Usually, the more variables you have, the better your model is at predicting, but this is not always true. Sometimes you may not have enough data, you may run into numerical problems, or many of the variables may not be useful and even act as noise. As a result, you should always check the MSE and R^2.
+# Usually, the more variables you have, the better your model is at predicting, but this is not always true.
+# Sometimes you may not have enough data, you may run into numerical problems, or many of the variables may not be useful and even act as noise. As a result, you should always check the MSE and R^2.
 #
 # In order to compare the results of the MLR vs SLR models, we look at a combination of both the R-squared and MSE to make the best conclusion about the fit of the model.
 #
 # MSE: The MSE of SLR is 3.16x10^7 while MLR has an MSE of 1.2 x10^7. The MSE of MLR is much smaller.
-# R-squared: In this case, we can also see that there is a big difference between the R-squared of the SLR and the R-squared of the MLR. The R-squared for the SLR (~0.497) is very small compared to the R-squared for the MLR (~0.809).
+# R-squared: In this case, we can also see that there is a big difference between the R-squared of the SLR and the R-squared of the MLR.
+# The R-squared for the SLR (~0.497) is very small compared to the R-squared for the MLR (~0.809).
 # This R-squared in combination with the MSE show that MLR seems like the better model fit in this case compared to SLR.
 #
 # Simple Linear Model (SLR) vs. Polynomial Fit
@@ -183,4 +185,5 @@ plt.show()
 # MSE: The MSE for the MLR is smaller than the MSE for the Polynomial Fit.
 # R-squared: The R-squared for the MLR is also much larger than for the Polynomial Fit.
 # Conclusion
-# Comparing these three models, we conclude that the MLR model is the best model to be able to predict price from our dataset. This result makes sense since we have 27 variables in total and we know that more than one of those variables are potential predictors of the final car price.
+# Comparing these three models, we conclude that the MLR model is the best model to be able to predict price from our dataset.
+# This result makes sense since we have 27 variables in total and we know that more than one of those variables are potential predictors of the final car price.
